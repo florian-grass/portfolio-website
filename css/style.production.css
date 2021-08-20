@@ -7,12 +7,13 @@
 
 /* Florian's CSS file */
 
+/* Global rules start */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-html  {
+html {
 
 }
 
@@ -52,10 +53,7 @@ a:visited {
   color: #05676e;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
+a:hover,
 a:focus {
   text-decoration: none;
 }
@@ -64,12 +62,16 @@ a:active {
   color: #489c79;
 }
 
+/* Global rules end */
+
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: #357b70;
   font-size: 16px;
@@ -77,9 +79,11 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  /* combines the two values of transition-duration and transition-property into only one value = transition*/
+
+  /* combines the two values of transition-duration and transition-property into only one value = transition */
   -webkit-transition: 0.9s opacity;
   -o-transition: 0.9s opacity;
   transition: 0.9s opacity;
@@ -89,8 +93,10 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: #357b70;
   font-size: 16px;
@@ -98,27 +104,33 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  /* combines the two values of transition-duration and transition-property into only one value = transition*/
+
+  /* combines the two values of transition-duration and transition-property into only one value = transition */
   -webkit-transition: 0.9s opacity;
   -o-transition: 0.9s opacity;
   transition: 0.9s opacity;
 }
 
-button:hover, button:focus,
-.button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 80%;
 }
 
 .button__secondary {
   background-color: undefined;
-  color: undefined;
+  color: #2b2b2b;
 }
 
+/* header section start */
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,9 +160,12 @@ button:hover, button:focus,
   display: inline-block;
   margin-left: 15px;
 }
+
 .navigation-list__item--active {
   text-decoration: none;
 }
+
+/* header section end */
 
 /* start Index page */
 .profile__portrait {
@@ -166,6 +181,8 @@ button:hover, button:focus,
 }
 
 /* end Index page */
+
+/* start page footer  */
 
 .page-footer {
   clear: both;
@@ -183,15 +200,18 @@ button:hover, button:focus,
   text-decoration: none;
 }
 
-.social-media {
-}
+.social-media {}
+
+/* end page footer  */
 
 /* start work page */
+
 /* start grid fallbeack */
 .grid__item {
   display: inline-block;
   width: 33%;
 }
+
 /* end grid fallback */
 
 @supports (display: grid) {
@@ -239,10 +259,12 @@ button:hover, button:focus,
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -307,50 +329,52 @@ button:hover, button:focus,
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
-/* This CSScould also be put in a single line:*/
+
+/* This CSScould also be put in a single line: */
+
 /* animation: 4s color-change infinite alternate linear */
 
 @-webkit-keyframes cloud-front-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px)
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 250px);
-            transform: translate(200px, 250px)
+            transform: translate(200px, 250px);
   }
 }
 
 @keyframes cloud-front-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px)
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 250px);
-            transform: translate(200px, 250px)
+            transform: translate(200px, 250px);
   }
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px)
+            transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 80px);
-            transform: translate(100px, 80px)
+            transform: translate(100px, 80px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px)
+            transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 80px);
-            transform: translate(100px, 80px)
+            transform: translate(100px, 80px);
   }
 }
 
@@ -369,6 +393,12 @@ button:hover, button:focus,
   -webkit-animation: 34s cloud-move-reverse infinite alternate;
           animation: 34s cloud-move-reverse infinite alternate;
 }
+
+
+
+
+
+
 
 
 /* spare space */
