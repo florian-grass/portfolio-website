@@ -232,6 +232,7 @@ button:focus,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 .flex__item1 {
@@ -242,6 +243,12 @@ button:focus,
 }
 .flex__item3 {
 
+}
+
+.svg-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes color-change {
