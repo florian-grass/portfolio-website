@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-/* Florian's CSS file*/
+/* Florian's CSS file */
 
 * {
   -webkit-box-sizing: border-box;
@@ -178,6 +178,7 @@ button:hover, button:focus,
           flex-direction: column;
   text-align: center;
 }
+
 .page-footer a {
   text-decoration: none;
 }
