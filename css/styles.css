@@ -101,7 +101,7 @@ button:focus,
 
 .button__secondary {
   background-color: var(--secondary-color);
-  color: var(--darkgrey);
+  color: var(--dark-grey);
 }
 
 /* header section start */
